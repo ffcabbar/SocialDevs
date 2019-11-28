@@ -4,6 +4,9 @@
 Project wide reusable functions
 ========================================================================== */
 
+import $ from 'jquery';
+import jQuery from 'jquery';
+
 $(document).ready(function () {
 
     "use strict";
@@ -252,18 +255,18 @@ $(document).ready(function () {
         };
 
         //Init Emojis
-        $.fn.initEmojis = function () {
-            $(".comment-textarea").emojioneArea({
-                pickerPosition: "bottom",
-                filtersPosition: "top",
-                tones: false,
-                autocomplete: false,
-                inline: false,
-                hidePickerOnBlur: true,
-                buttonTitle: "Use the TAB key to insert emoji faster",
-                //container: $(".emoji-picker")
-            });
-        };
+        // $.fn.initEmojis = function () {
+        //     $(".comment-textarea").emojioneArea({
+        //         pickerPosition: "bottom",
+        //         filtersPosition: "top",
+        //         tones: false,
+        //         autocomplete: false,
+        //         inline: false,
+        //         hidePickerOnBlur: true,
+        //         buttonTitle: "Use the TAB key to insert emoji faster",
+        //         //container: $(".emoji-picker")
+        //     });
+        // };
 
         //Load more buttons
         $.fn.initLoadMore = function () {
@@ -623,42 +626,42 @@ $(document).ready(function () {
             })
         };
 
-        //Init About Page slider
-        $.fn.initAboutGlider = function () {
-            $('.about-glider').each(function () {
-                if ($(this).is(":visible")){
-                    var element = $(this).attr('id');
-                    new Glider(document.querySelector('#' + element), {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        dots: '#slider-dots-' + element,
-                        draggable: true,
-                        responsive: [
-                            {
-                                // screens greater than >= 775px
-                                breakpoint: 768,
-                                settings: {
-                                    // Set to `auto` and provide item width to adjust to viewport
-                                    slidesToShow: 3,
-                                    slidesToScroll: 3,
-                                    itemWidth: 150,
-                                    duration: 0.25
-                                }
-                            }, {
-                                // screens greater than >= 1024px
-                                breakpoint: 300,
-                                settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    //itemWidth: 150,
-                                    duration: 0.25
-                                }
-                            }
-                        ]
-                    });
-                }
-            })
-        };
+        // //Init About Page slider
+        // $.fn.initAboutGlider = function () {
+        //     $('.about-glider').each(function () {
+        //         if ($(this).is(":visible")){
+        //             var element = $(this).attr('id');
+        //             new Glider(document.querySelector('#' + element), {
+        //                 slidesToShow: 3,
+        //                 slidesToScroll: 3,
+        //                 dots: '#slider-dots-' + element,
+        //                 draggable: true,
+        //                 responsive: [
+        //                     {
+        //                         // screens greater than >= 775px
+        //                         breakpoint: 768,
+        //                         settings: {
+        //                             // Set to `auto` and provide item width to adjust to viewport
+        //                             slidesToShow: 3,
+        //                             slidesToScroll: 3,
+        //                             itemWidth: 150,
+        //                             duration: 0.25
+        //                         }
+        //                     }, {
+        //                         // screens greater than >= 1024px
+        //                         breakpoint: 300,
+        //                         settings: {
+        //                             slidesToShow: 1,
+        //                             slidesToScroll: 1,
+        //                             //itemWidth: 150,
+        //                             duration: 0.25
+        //                         }
+        //                     }
+        //                 ]
+        //             });
+        //         }
+        //     })
+        // };
 
     }(jQuery));
 

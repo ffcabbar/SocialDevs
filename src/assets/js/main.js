@@ -4,14 +4,18 @@
 Main js file
 ========================================================================== */
 
+
+import $ from 'jquery';
+import jQuery from 'jquery';
+
 $(document).ready(function(){
 
     "use strict";
 
     //Code highlight init
-    $('.highlight-block code').each(function (i, block) {
-        hljs.highlightBlock(block);
-    });
+    // $('.highlight-block code').each(function (i, block) {
+    //     hljs.highlightBlock(block);
+    // });
 
     //Pageloader
     $().initPageloader();
@@ -44,22 +48,22 @@ $(document).ready(function(){
     $().initBgImages();
 
     //Feather icons initialization
-    feather.replace();
+    // feather.replace();
 
     //Emojis
-    $().initEmojis();
+    // $().initEmojis();
 
     //Load More
     $().initLoadMore();
 
     //Init tooltips
-    $().initTooltips();
+    // $().initTooltips();
 
     //Init Like Button
     $().initLikeButton();
 
     //Init Simple Popover
-    $().initSimplePopover();
+    // $().initSimplePopover();
 
     //Share modal demo
     $().initShareModal();
@@ -68,68 +72,68 @@ $(document).ready(function(){
     $().initPlusMenu();
 
     //Init Tipuedrop
-    $('#tipue_drop_input').tipuedrop();
+    // $('#tipue_drop_input').tipuedrop();
 
 });
 
 
 
 //Toast Service
-var toasts = {}
+// var toasts = {}
 
-toasts.service = {
-    info: function (title, icon, message, position, t) {
-        iziToast.show({
-            class: 'toast',
-            icon: icon,
-            title: title,
-            message: message,
-            titleColor: '#fff',
-            messageColor: '#fff',
-            iconColor: "#fff",
-            backgroundColor: '#0062ff',
-            progressBarColor: '#bc7aff',
-            position: position,
-            transitionIn: 'fadeInDown',
-            close: false,
-            timeout: t,
-            zindex: 99999,
-        });
-    },
-    success: function (title, icon, message, position, t) {
-        iziToast.show({
-            class: 'toast',
-            icon: icon,
-            title: title,
-            message: message,
-            titleColor: '#fff',
-            messageColor: '#fff',
-            iconColor: "#fff",
-            backgroundColor: '#0062ff',
-            progressBarColor: '#fafafa',
-            position: position,
-            transitionIn: 'fadeInDown',
-            close: false,
-            timeout: t,
-            zindex: 99999,
-        });
-    },
-    error: function (title, icon, message, position, t) {
-        iziToast.show({
-            class: 'toast',
-            icon: icon,
-            title: title,
-            message: message,
-            titleColor: '#fff',
-            messageColor: '#fff',
-            iconColor: "#fff",
-            backgroundColor: '#ff533d',
-            progressBarColor: '#fff',
-            position: position,
-            transitionIn: 'fadeInDown',
-            close: false,
-            timeout: t,
-            zindex: 99999,
-        });
-    }
-}
+// toasts.service = {
+//     info: function (title, icon, message, position, t) {
+//         iziToast.show({
+//             class: 'toast',
+//             icon: icon,
+//             title: title,
+//             message: message,
+//             titleColor: '#fff',
+//             messageColor: '#fff',
+//             iconColor: "#fff",
+//             backgroundColor: '#0062ff',
+//             progressBarColor: '#bc7aff',
+//             position: position,
+//             transitionIn: 'fadeInDown',
+//             close: false,
+//             timeout: t,
+//             zindex: 99999,
+//         });
+//     },
+//     success: function (title, icon, message, position, t) {
+//         iziToast.show({
+//             class: 'toast',
+//             icon: icon,
+//             title: title,
+//             message: message,
+//             titleColor: '#fff',
+//             messageColor: '#fff',
+//             iconColor: "#fff",
+//             backgroundColor: '#0062ff',
+//             progressBarColor: '#fafafa',
+//             position: position,
+//             transitionIn: 'fadeInDown',
+//             close: false,
+//             timeout: t,
+//             zindex: 99999,
+//         });
+//     },
+//     error: function (title, icon, message, position, t) {
+//         iziToast.show({
+//             class: 'toast',
+//             icon: icon,
+//             title: title,
+//             message: message,
+//             titleColor: '#fff',
+//             messageColor: '#fff',
+//             iconColor: "#fff",
+//             backgroundColor: '#ff533d',
+//             progressBarColor: '#fff',
+//             position: position,
+//             transitionIn: 'fadeInDown',
+//             close: false,
+//             timeout: t,
+//             zindex: 99999,
+//         });
+//     }
+// }
