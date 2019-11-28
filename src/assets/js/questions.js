@@ -4,9 +4,12 @@
 Questions js file
 ========================================================================== */
 
+import $ from 'jquery';
+import jQuery from 'jquery';
+import toasts from 'jquery';
+
 $(document).ready(function () {
 
-    "use strict";
 
     //Highlight current menu item
     if ($('.questions-menu, .questions-nav-menu').length) {

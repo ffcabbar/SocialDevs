@@ -4,9 +4,11 @@
 All autocompletes that are used accross the project
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
+import jQuery from 'jquery';
+import feather from 'jquery';
 
-    "use strict";
+$(document).ready(function () {
 
     //Friends autocomplete
     if ($('#users-autocpl').length) {
@@ -16,7 +18,7 @@ $(document).ready(function () {
         var summary = '';
 
         var usersOptions = {
-            url: "assets/data/api/users/user-autocpl.json",
+            url: "../data/api/users/user-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -76,7 +78,7 @@ $(document).ready(function () {
             },
         };
 
-        $("#users-autocpl").easyAutocomplete(usersOptions);
+        // $("#users-autocpl").easyAutocomplete(usersOptions);
     }
 
     // Share modal friend tags autocomplete
@@ -87,7 +89,7 @@ $(document).ready(function () {
         var summary = '';
 
         var usersOptions = {
-            url: "assets/data/api/users/user-autocpl.json",
+            url: "../data/api/users/user-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -147,7 +149,7 @@ $(document).ready(function () {
         var closeIcon = feather.icons.x.toSvg();
 
         var albumOptions = {
-            url: "assets/data/api/users/user-autocpl.json",
+            url: "../data/api/users/user-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -206,7 +208,7 @@ $(document).ready(function () {
         var summary = '';
 
         var simpleUsersOptions = {
-            url: "assets/data/api/users/user-autocpl.json",
+            url: "../data/api/users/user-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -243,7 +245,7 @@ $(document).ready(function () {
         var summary = '';
 
         var simpleGroupsOptions = {
-            url: "assets/data/api/groups/groups-autocpl.json",
+            url: "../data/api/groups/groups-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -280,7 +282,7 @@ $(document).ready(function () {
         var summary = '';
 
         var simpleLocationsOptions = {
-            url: "assets/data/api/places/places-autocpl.json",
+            url: "../data/api/places/places-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -315,7 +317,7 @@ $(document).ready(function () {
         var html = '';
 
         var activitiesOptions = {
-            url: "assets/data/api/activities/activity-autocpl.json",
+            url: "../data/api/activities/activity-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -395,7 +397,7 @@ $(document).ready(function () {
         var html = '';
 
         var moodOptions = {
-            url: "assets/data/api/activities/mood/mood-autocpl.json",
+            url: "../data/api/activities/mood/mood-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -454,7 +456,7 @@ $(document).ready(function () {
         var html = '';
 
         var drinkingOptions = {
-            url: "assets/data/api/activities/drinking/drinking-autocpl.json",
+            url: "../data/api/activities/drinking/drinking-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -512,7 +514,7 @@ $(document).ready(function () {
         var html = '';
 
         var eatingOptions = {
-            url: "assets/data/api/activities/eating/eating-autocpl.json",
+            url: "../data/api/activities/eating/eating-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -570,7 +572,7 @@ $(document).ready(function () {
         var html = '';
 
         var readingOptions = {
-            url: "assets/data/api/activities/reading/reading-autocpl.json",
+            url: "../data/api/activities/reading/reading-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -628,7 +630,7 @@ $(document).ready(function () {
         var html = '';
 
         var watchingOptions = {
-            url: "assets/data/api/activities/watching/watching-autocpl.json",
+            url: "../data/api/activities/watching/watching-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -686,7 +688,7 @@ $(document).ready(function () {
         var html = '';
 
         var travelOptions = {
-            url: "assets/data/api/activities/travel/travel-autocpl.json",
+            url: "../data/api/activities/travel/travel-autocpl.json",
             getValue: "name",
             template: {
                 type: "custom",
@@ -739,43 +741,43 @@ $(document).ready(function () {
     }
 
     //Google places autocomplete
-    if ($('#location-autocpl').length) {
-        $(function () {
+    // if ($('#location-autocpl').length) {
+    //     $(function () {
 
-            var autocomplete;
-            var geocoder;
-            var input = document.getElementById('location-autocpl');
-            var options = {
-                //componentRestrictions: {'country':'us'},
-                types: ['(cities)'] // (regions)
-            };
+    //         var autocomplete;
+    //         var geocoder;
+    //         var input = document.getElementById('location-autocpl');
+    //         var options = {
+    //             //componentRestrictions: {'country':'us'},
+    //             types: ['(cities)'] // (regions)
+    //         };
 
-            autocomplete = new google.maps.places.Autocomplete(input, options);
+    //         autocomplete = new google.maps.places.Autocomplete(input, options);
 
-            $('#go').click(function () {
-                var location = autocomplete.getPlace();
-                geocoder = new google.maps.Geocoder();
-                console.log(location['geometry'])
-                lat = location['geometry']['location'].lat();
-                lng = location['geometry']['location'].lng();
-                var latlng = new google.maps.LatLng(lat, lng);
+    //         $('#go').click(function () {
+    //             var location = autocomplete.getPlace();
+    //             geocoder = new google.maps.Geocoder();
+    //             console.log(location['geometry'])
+    //             lat = location['geometry']['location'].lat();
+    //             lng = location['geometry']['location'].lng();
+    //             var latlng = new google.maps.LatLng(lat, lng);
 
-                // http://stackoverflow.com/a/5341468
-                geocoder.geocode({ 'latLng': latlng }, function (results) {
-                    for (i = 0; i < results.length; i++) {
-                        for (var j = 0; j < results[i].address_components.length; j++) {
-                            for (var k = 0; k < results[i].address_components[j].types.length; k++) {
-                                if (results[i].address_components[j].types[k] == "postal_code") {
-                                    zipcode = results[i].address_components[j].short_name;
-                                    $('span.zip').html(zipcode);
-                                }
-                            }
-                        }
-                    }
-                });
+    //             // http://stackoverflow.com/a/5341468
+    //             geocoder.geocode({ 'latLng': latlng }, function (results) {
+    //                 for (i = 0; i < results.length; i++) {
+    //                     for (var j = 0; j < results[i].address_components.length; j++) {
+    //                         for (var k = 0; k < results[i].address_components[j].types.length; k++) {
+    //                             if (results[i].address_components[j].types[k] == "postal_code") {
+    //                                 zipcode = results[i].address_components[j].short_name;
+    //                                 $('span.zip').html(zipcode);
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             });
 
-            });
-        });
-    }
+    //         });
+    //     });
+    // }
 
 })

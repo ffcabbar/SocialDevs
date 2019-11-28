@@ -4,9 +4,13 @@
 Touch functions
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
+import jQuery from 'jquery';
+import define from 'jquery';
+import Hammer from 'hammerjs';
+import 'hammerjs';
 
-    "use strict";
+$(document).ready(function () {
 
     (function (factory) {
         if (typeof define === 'function' && define.amd) {

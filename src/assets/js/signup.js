@@ -4,6 +4,9 @@
 Signup Process JS
 ========================================================================== */
 
+import $ from 'jquery';
+import jQuery from 'jquery';
+
 Dropzone.autoDiscover = false;
 
 $(document).ready(function () {

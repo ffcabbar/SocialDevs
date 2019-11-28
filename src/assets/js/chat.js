@@ -4,9 +4,9 @@
 Chat js file
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
 
-    "use strict";
+$(document).ready(function () {
 
     //Close chat app
     $('.close-chat, .open-chat').on('click', function () {

@@ -4,7 +4,8 @@
 Uploader used in the create album modal
 ========================================================================== */
 
-"use strict";
+import $ from 'jquery';
+import Dropzone from 'jquery';
 
 if ($('.modal-uploader').length) {
 

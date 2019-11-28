@@ -4,9 +4,6 @@
 Live video functions
 ========================================================================== */
 
-"use strict";
-
-
 //Get user media
 navigator.getUserMedia = ( navigator.getUserMedia ||
                           navigator.webkitGetUserMedia ||

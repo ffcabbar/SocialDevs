@@ -10,12 +10,30 @@ import '../node_modules/bulma/css/bulma.min.css';
 import './assets/css/core.css';
 
 
-
 //Js Files
-import {jQuery}  from 'jquery';
 import './assets/data/tipuedrop_content';
 import './assets/js/global';
 import './assets/js/main';
+import '../node_modules/feather-icons/dist/feather';
+import './assets/js/feed';
+import './assets/js/chat';
+import './assets/js/inbox';
+import './assets/js/profile';
+import './assets/js/friends';
+import './assets/js/events';
+import './assets/js/explorer';
+import './assets/js/news';
+import './assets/js/questions';
+import './assets/js/videos';
+import './assets/js/widgets';
+// import './assets/js/autocompletes';
+import './assets/js/modal-uploader';
+import './assets/js/popovers-users';
+import './assets/js/popovers-pages';
+import './assets/js/go-live';
+import './assets/js/lightbox';
+import './assets/js/touch';
+import './assets/js/tour';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

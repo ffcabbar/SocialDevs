@@ -4,9 +4,9 @@
 Landing page functions
 ========================================================================== */
 
-$(document).ready(function(){
+import $ from 'jquery';
 
-    "use strict";
+$(document).ready(function(){
 
     if ($('.landing-wrapper').length){
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
             // If our Href points to a valid, non-empty anchor, and is on the same page (e.g. #foo)
             // Legacy jQuery and IE7 may have issues: http://stackoverflow.com/q/1593174
-            if (href.indexOf("#") == 0) {
+            if (href.indexOf("#") === 0) {
                 var $target = $(href);
 
                 // Older browser without pushState might flicker here, as they momentarily

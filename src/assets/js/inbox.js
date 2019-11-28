@@ -4,9 +4,10 @@
 Inbox UI functions
 ========================================================================== */
 
-$(document).ready(function(){
+import $ from 'jquery';
+import Quill from 'jquery'
 
-    "use strict";
+$(document).ready(function(){
 
     if ($('.inbox-wrapper').length) {
 

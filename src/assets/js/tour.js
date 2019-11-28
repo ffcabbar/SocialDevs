@@ -4,7 +4,7 @@
 App Tour
 ========================================================================== */
 
-"use strict";
+import $ from 'jquery';
 
 var tour = {
     id: "hello-friendkit",
@@ -149,23 +149,23 @@ var tour = {
     ]
 };
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    $('#tour-start').on('click', function(){
-        if (!hopscotch.isActive) {
-            // Start the tour!
-            hopscotch.startTour(tour, 0);
-        }
-    })
+//     $('#tour-start').on('click', function(){
+//         if (!hopscotch.isActive) {
+//             // Start the tour!
+//             hopscotch.startTour(tour, 0);
+//         }
+//     })
 
-    console.log(hopscotch.getState())
+//     console.log(hopscotch.getState())
 
-    if (hopscotch.getState() === "hello-friendkit:4") {
-        hopscotch.startTour(tour, 4);
-    }
+//     if (hopscotch.getState() === "hello-friendkit:4") {
+//         hopscotch.startTour(tour, 4);
+//     }
 
-    else if (hopscotch.getState() === "hello-friendkit:10") {
-        hopscotch.startTour(tour, 10);
-    }
-})
+//     else if (hopscotch.getState() === "hello-friendkit:10") {
+//         hopscotch.startTour(tour, 10);
+//     }
+// })
 

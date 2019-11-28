@@ -4,9 +4,9 @@
 Videos js file
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
 
-    "use strict";
+$(document).ready(function () {
 
     //Sidebar
     if ($('.videos-sidebar').length){

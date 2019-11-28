@@ -4,9 +4,11 @@
 Handles the pages popovers that appear when hovering a page avatar
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
+import jQuery from 'jquery';
+import feather from 'feather-icons'
 
-    "use strict";
+$(document).ready(function () {
 
     /* Pages
 
@@ -44,7 +46,7 @@ $(document).ready(function () {
 
 
                 $.ajax({
-                    url: 'assets/data/api/pages/pages.json',
+                    url: '../data/api/pages/pages.json',
                     async: true,
                     dataType: 'json',
                     success: function (data) {

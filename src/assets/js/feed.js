@@ -4,9 +4,12 @@
 Feed page js file
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
+import feather from 'feather-icons';
+import iziToast from 'jquery';
 
-    "use strict";
+
+$(document).ready(function () {
 
     if ($('#activity-feed').length) {
 
@@ -227,12 +230,12 @@ $(document).ready(function () {
         })
 
         //Init datepicker inside album modal
-        $('#album-datepicker').datepicker({
-            format: 'mm-dd-yyyy',
-            container: 'body',
-            autoHide: true,
-            offset: 0
-        });
+        // $('#album-datepicker').datepicker({
+        //     format: 'mm-dd-yyyy',
+        //     container: 'body',
+        //     autoHide: true,
+        //     offset: 0
+        // });
 
         //Help modal before live video
         videosHelp()

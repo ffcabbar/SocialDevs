@@ -4,9 +4,13 @@
 Profile js file
 ========================================================================== */
 
+import $ from 'jquery';
+import jQuery from 'jquery';
+import iziToast from 'izitoast';
+import swal from 'jquery';
+
 $(document).ready(function(){
 
-    "use strict";
 
     //Highlight current profile menu item
     if ($('.profile-menu').length) {

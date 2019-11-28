@@ -4,9 +4,11 @@
 Handles the user popovers that appear when hovering a user image
 ========================================================================== */
 
-$(document).ready(function(){
+import $ from 'jquery';
+import jQuery from 'jquery';
+import feather from 'feather-icons'
 
-    "use strict";
+$(document).ready(function(){
 
     /* Users
 
@@ -40,7 +42,7 @@ $(document).ready(function(){
 
         $.fn.getUserPopovers = function() {
 
-            var something = true
+            var something = true;
 
             $('*[data-user-popover]').each(function() {
                 var e=$(this);
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
 
                 $.ajax({
-                    url: 'assets/data/api/users/users.json',
+                    url: '../data/api/users/users.json',
                     async: true,
                     dataType: 'json',
                     success: function(data) {

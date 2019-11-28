@@ -4,9 +4,9 @@
 Events page js file
 ========================================================================== */
 
-$(document).ready(function () {
+import $ from 'jquery';
 
-    "use strict";
+$(document).ready(function () {
 
     if ($('#events-page').length) {
 
