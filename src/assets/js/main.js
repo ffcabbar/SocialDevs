@@ -8,7 +8,7 @@ import $ from 'jquery';
 import feather from 'feather-icons';
 import iziToast from 'izitoast';
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     //Code highlight init
     // $('.highlight-block code').each(function (i, block) {
