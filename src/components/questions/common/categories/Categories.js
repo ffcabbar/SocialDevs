@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class HomeCategories extends Component {
+class Categories extends Component {
     render() {
         return (
             <div className="tabs question-tabs is-centered">
@@ -32,4 +32,4 @@ class HomeCategories extends Component {
     }
 }
 
-export default HomeCategories;
+export default Categories;

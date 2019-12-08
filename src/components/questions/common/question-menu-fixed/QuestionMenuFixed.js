@@ -15,14 +15,14 @@ class QuestionMenuFixed extends Component {
                     </li>
 
                     <li>
-                        <a className="menu-item">
+                        <Link className="menu-item" to={"/question/my-questions"}>
                             <MessageCircle />
                             <span>My Questions</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <Link className="menu-item" to={"/question/mystats"}>
+                        <Link className="menu-item" to={"/question/my-stats"}>
                             <Hexagon />
                             <span>My Stats</span>
                         </Link>
@@ -51,14 +51,14 @@ class QuestionMenuFixed extends Component {
                     </li>
 
                     <li>
-                        <a className="menu-item">
+                        <Link className="menu-item" to={"/question/my-questions"}>
                             <MessageCircle />
                             <span>My Questions</span>
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <Link className="menu-item" to={"/question/mystats"}>
+                        <Link className="menu-item" to={"/question/my-stats"}>
                             <Hexagon />
                             <span>My Stats</span>
                         </Link>

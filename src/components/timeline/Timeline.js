@@ -43,8 +43,7 @@ function Timeline() {
         {/* /Feed page main wrapper */}
       </div>
       {/* /Container */}
-      {/* Create group modal in compose card */}
-      {/* /includes/pages/feed/modals/create-group-modal.html */}
+
       <div id="create-group-modal" className="modal create-group-modal is-light-bg">
         <div className="modal-background" />
         <div className="modal-content">
