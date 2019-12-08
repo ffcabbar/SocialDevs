@@ -9,7 +9,7 @@ class QuestionPosts extends Component {
                     {/* Title */}
                     <a href="questions-single.html" className="question-title is-link">
                         Is there a simple guide for Sass Mixins?
-        </a>
+                     </a>
                     {/* Author */}
                     <div className="question-author">
                         <img
@@ -31,7 +31,7 @@ class QuestionPosts extends Component {
                             vestigium ponimus. Duo Reges: constructio interrete. Proclivi currit
                             oratio. Quae contraria sunt his, malane? Quod quidem nobis non saepe
                             contingit.
-          </p>
+                         </p>
                         <div className="tags">
                             <span className="tag">stylesheets</span>
                             <span className="tag">sass</span>
@@ -113,7 +113,6 @@ class QuestionPosts extends Component {
                         <span>9 Answers</span>
                     </div>
                 </div>
-
 
 
                 <div className=" load-more-wrap has-text-centered">

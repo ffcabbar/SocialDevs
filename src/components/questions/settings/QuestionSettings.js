@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import QuestionMenu from "../question-menu/QuestionMenu";
-import QuestionMenuFixed from "../question-menu-fixed/QuestionMenuFixed";
+import QuestionMenuFixed from "../common/question-menu-fixed/QuestionMenuFixed";
 import * as Icon from 'react-feather';
 
 class QuestionSettings extends Component {
@@ -26,7 +26,7 @@ class QuestionSettings extends Component {
                         placeholder="Search..."
                       />
                       <div className="search-icon">
-                        <Icon.Search/>
+                        <Icon.Search />
                       </div>
                     </div>
                   </div>
