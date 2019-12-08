@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import QuestionMenu from "../question-menu/QuestionMenu";
+import QuestionMenu from "../common/question-menu/QuestionMenu";
 import QuestionMenuFixed from "../common/question-menu-fixed/QuestionMenuFixed";
 import * as Icon from 'react-feather';
 

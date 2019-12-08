@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import QuestionMenu from "../question-menu/QuestionMenu";
+import QuestionMenu from "../common/question-menu/QuestionMenu";
 import CategoryList from "./category-list/CategoryList";
 
 class QuestionCategories extends Component {
