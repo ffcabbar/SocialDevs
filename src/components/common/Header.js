@@ -2,6 +2,7 @@ import React from 'react';
 import Search from './header/search/Search';
 import Notifications from './header/notifications/Notifications';
 import ProfileBar from './header/profile-bar/ProfileBar';
+import * as Icon from 'react-feather';
 
 function Header() {
     return (
@@ -10,17 +11,17 @@ function Header() {
             <div className="container is-fluid">
                 <div className="navbar-brand">
                     <a href="/" className="navbar-item">
-                        <img src="assets/images/logo/friendkit.svg" width={112} height={28} alt="" />
+                        <img src={require('../../assets/images/logo/friendkit.svg')} width={112} height={28} alt="" />
                     </a>
                 </div>
                 <div className="navbar-menu">
-                   <Notifications/>
+                    <Notifications />
                     <div className="navbar-end">
-                        <Search/>
-                        <ProfileBar/>
+                        <Search />
+                        <ProfileBar />
                         <div className="navbar-item is-plus-menu">
                             <a id="plus-menu" className="button action-button is-solid primary-button raised">
-                                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-plus"><line x1={12} y1={5} x2={12} y2={19} /><line x1={5} y1={12} x2={19} y2={12} /></svg>
+                                <Icon.Plus size={24} />
                             </a>
                             <div className="plus-drop">
                                 <div className="drop-content">
