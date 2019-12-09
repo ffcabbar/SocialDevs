@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./common/Header";
+import Header from "./common/header/Header";
 import Timeline from "./timeline/Timeline";
 import QuestionSettings from "./questions/settings/QuestionSettings";
 import QuestionMyStats from "./questions/my-stats/QuestionMyStats";
@@ -7,6 +7,7 @@ import QuestionCategories from "./questions/categories/QuestionCategories";
 import QuestionHome from "./questions/home/QuestionHome";
 import { Route, Switch } from "react-router-dom";
 import MyQuestions from "./questions/my-questions/MyQuestions";
+import Profile from "./profile/Profile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         />
         <Route exact path="/question/my-stats" component={QuestionMyStats} />
         <Route exact path="/question/my-questions" component={MyQuestions} />
+        <Route exact path="/profile" component={Profile} />
       </Switch>
     </div>
   );
