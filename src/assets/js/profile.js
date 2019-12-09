@@ -342,10 +342,10 @@ $(document).ready(function(){
             $('.content-section').removeClass('is-active');
             $('#' + targetContent).addClass('is-active');
 
-            if ((targetContent == 'education-content') || (targetContent == 'job-content')) {
-                //Init Glider
-                $().initAboutGlider();
-            }
+            // if ((targetContent === 'education-content') || (targetContent === 'job-content')) {
+            //     //Init Glider
+            //     $().initAboutGlider();
+            // }
         })
 
         //Mini like button
@@ -354,7 +354,7 @@ $(document).ready(function(){
         })
 
         //Modal videos
-        $(".video-list .video-wrapper .video-button").modalVideo();
+        // $(".video-list .video-wrapper .video-button").modalVideo();
     }
 
     //Profile photos specific functions (profile-photos.html)

@@ -7,7 +7,10 @@ import QuestionCategories from "./questions/categories/QuestionCategories";
 import QuestionHome from "./questions/home/QuestionHome";
 import { Route, Switch } from "react-router-dom";
 import MyQuestions from "./questions/my-questions/MyQuestions";
-import Profile from "./profile/Profile";
+import Profile from "./profile/profile-main/Profile";
+import ProfileAbout from "./profile/profile-about/ProfileAbout";
+import ProfileFriends from "./profile/profile-friends/ProfileFriends";
+import ProfilePhotos from "./profile/profile-photos/ProfilePhotos";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route exact path="/question/my-stats" component={QuestionMyStats} />
         <Route exact path="/question/my-questions" component={MyQuestions} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/profile/about" component={ProfileAbout} />
+        <Route exact path="/profile/friends" component={ProfileFriends} />
+        <Route exact path="/profile/photos" component={ProfilePhotos} />
       </Switch>
     </div>
   );

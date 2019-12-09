@@ -36,7 +36,7 @@ class ProfileBar extends Component {
                                     </div>
                                 </div>
                             </Link>
-                            <hr class="account-divider"/>
+                            <hr className="account-divider"/>
                             <a className="account-item">
                                 <div className="media">
                                     <div className="icon-wrap">
