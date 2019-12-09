@@ -11,14 +11,19 @@ import Profile from "./profile/profile-main/Profile";
 import ProfileAbout from "./profile/profile-about/ProfileAbout";
 import ProfileFriends from "./profile/profile-friends/ProfileFriends";
 import ProfilePhotos from "./profile/profile-photos/ProfilePhotos";
+import Login from "./account/login/Login";
+import Register from "./account/register/Register";
 
 function App() {
   return (
     <div>
       <div className="app-overlay"></div>
-      <Header />
+      {window.location.pathname === '/account/login' || window.location.pathname === '/account/register' ? null : <Header />}
+      {/*Buraya yukardaki koşula göre header componenti geliyor veya gelmiyor*/}
       <Switch>
         <Route exact path="/" component={Timeline} />
+        <Route exact path='/account/login' component={Login}/>
+        <Route exact path='/account/register' component={Register} />
         <Route exact path="/question/home" component={QuestionHome} />
         <Route exact path="/question/settings" component={QuestionSettings} />
         <Route
