@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProfileHeader from './profile-header/ProfileHeader';
+import ProfileHeader from '../common/profile-header/ProfileHeader';
 import BasicInfo from './profile-widgets/basic-info/BasicInfo';
 import BasicInfoWrapper from './profile-widgets/basic-info-wrapper/BasicInfoWrapper';
 import ProfilePhotos from './profile-widgets/profile-photos/ProfilePhotos';

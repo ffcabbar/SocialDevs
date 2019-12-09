@@ -7,6 +7,7 @@ Project wide reusable functions
 import $ from 'jquery';
 import jQuery from 'jquery';
 
+
 $(document).ready(function () {
 
     "use strict";
@@ -626,11 +627,12 @@ $(document).ready(function () {
             })
         };
 
-        // //Init About Page slider
+        //Init About Page slider
         // $.fn.initAboutGlider = function () {
         //     $('.about-glider').each(function () {
         //         if ($(this).is(":visible")){
         //             var element = $(this).attr('id');
+        //             // eslint-disable-next-line no-undef
         //             new Glider(document.querySelector('#' + element), {
         //                 slidesToShow: 3,
         //                 slidesToScroll: 3,

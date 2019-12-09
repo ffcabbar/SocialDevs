@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as Icon from 'react-feather';
+import { Link } from "react-router-dom";
 
 class ProfileHeader extends Component {
     render() {
@@ -54,7 +55,8 @@ class ProfileHeader extends Component {
                             </div>
                             <div className="dropdown-menu" role="menu">
                                 <div className="dropdown-content">
-                                    <a href="/profile-main.html" className="dropdown-item">
+
+                                    <Link to={"/profile"} className="dropdown-item">
                                         <div className="media">
                                             <Icon.Activity />
                                             <div className="media-content">
@@ -62,8 +64,10 @@ class ProfileHeader extends Component {
                                                 <small>Open Timeline.</small>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/profile-about.html" className="dropdown-item">
+                                    </Link>
+
+
+                                    <Link to={"/profile/about"} className="dropdown-item">
                                         <div className="media">
                                             <Icon.AlignRight />
                                             <div className="media-content">
@@ -71,8 +75,9 @@ class ProfileHeader extends Component {
                                                 <small>See about info.</small>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/profile-friends.html" className="dropdown-item">
+                                    </Link>
+
+                                    <Link to={"/profile/friends"} className="dropdown-item">
                                         <div className="media">
                                             <Icon.Heart />
                                             <div className="media-content">
@@ -80,8 +85,9 @@ class ProfileHeader extends Component {
                                                 <small>See friends.</small>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="/profile-photos.html" className="dropdown-item">
+                                    </Link>
+
+                                    <Link to={"/profile/photos"} className="dropdown-item">
                                         <div className="media">
                                             <Icon.Image />
                                             <div className="media-content">
@@ -89,18 +95,19 @@ class ProfileHeader extends Component {
                                                 <small>See all photos.</small>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
+
                                 </div>
                             </div>
                         </div></div>
                     <div className="profile-menu is-hidden-mobile">
                         <div className="menu-start">
-                            <a href="profile-main.html" className="button has-min-width">Timeline</a>
-                            <a href="profile-about.html" className="button has-min-width">About</a>
+                            <Link to={"/profile/"} className="button has-min-width">Timeline</Link>
+                            <Link to={"/profile/about"} className="button has-min-width">About</Link>
                         </div>
                         <div className="menu-end">
-                            <a id="profile-friends-link" href="profile-friends.html" className="button has-min-width">Friends</a>
-                            <a href="profile-photos.html" className="button has-min-width">Photos</a>
+                            <Link id="profile-friends-link" to={"/profile/friends"} className="button has-min-width">Friends</Link>
+                            <Link to={"/profile/photos"} className="button has-min-width">Photos</Link>
                         </div>
                     </div>
                     <div className="profile-subheader">
