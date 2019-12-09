@@ -6,11 +6,9 @@ class QuestionPosts extends Component {
         return (
             <div className="question-content">
                 <div className="question-block is-top-spaced">
-                    {/* Title */}
                     <a href="questions-single.html" className="question-title is-link">
                         Is there a simple guide for Sass Mixins?
                      </a>
-                    {/* Author */}
                     <div className="question-author">
                         <img
                             src="https://via.placeholder.com/150x150"
@@ -23,7 +21,6 @@ class QuestionPosts extends Component {
                             <span>3 hours ago</span>
                         </div>
                     </div>
-                    {/* Content */}
                     <div className="question-text">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At eum
@@ -39,7 +36,6 @@ class QuestionPosts extends Component {
                             <span className="tag">bourbon</span>
                         </div>
                     </div>
-                    {/* Footer */}
                     <div className="question-footer">
                         <div className="likes">
                             <div className="like-icon">
@@ -61,11 +57,11 @@ class QuestionPosts extends Component {
 
 
                 <div className="question-block is-top-spaced">
-                    {/* Title */}
+
                     <a href="questions-single.html" className="question-title is-link">
                         Is there a simple guide for Sass Mixins?
                     </a>
-                    {/* Author */}
+
                     <div className="question-author">
                         <img
                             src="https://via.placeholder.com/150x150"
@@ -78,7 +74,7 @@ class QuestionPosts extends Component {
                             <span>3 hours ago</span>
                         </div>
                     </div>
-                    {/* Content */}
+
                     <div className="question-text">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At eum
@@ -94,7 +90,7 @@ class QuestionPosts extends Component {
                             <span className="tag">bourbon</span>
                         </div>
                     </div>
-                    {/* Footer */}
+
                     <div className="question-footer">
                         <div className="likes">
                             <div className="like-icon">

@@ -9,14 +9,9 @@ class MyQuestions extends Component {
     render() {
         return (
             <div className="view-wrapper">
-
                 <QuestionMenu />
-
-                {/* Question wrap */}
                 <div className="questions-wrap is-smaller">
-                    {/* Container */}
                     <div className="container">
-
                         <div className="columns is-open">
                             <QuestionMenuFixed />
                             <div className="column is-6">

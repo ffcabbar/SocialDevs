@@ -128,7 +128,6 @@ class Activities extends Component {
                         </div>
                     </div>
                 </div>
-                {/* Load more */}
                 <div className=" load-more-wrap has-text-centered">
                     <a href="#" className="load-more-button">
                         Load More

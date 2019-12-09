@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class ProfileBar extends Component {
     render() {
@@ -11,11 +12,15 @@ class ProfileBar extends Component {
                 <div className="nav-drop is-account-dropdown">
                     <div className="inner">
                         <div className="nav-drop-header">
-                            <span className="username">Jenna Davis</span>
-                            <a href="profile-main.html">Profile</a>
+                            <span className="username">Furkan Cabbar</span>
+                            <Link to={"/profile"}>
+                                Profile
+                            </Link>
                         </div>
+                        
                         <div className="nav-drop-body account-items">
-                            <a id="profile-link" href="/profile-main.html" className="account-item">
+
+                            <Link to={"/profile"} className="account-item" id="profile-link">
                                 <div className="media">
                                     <div className="media-left">
                                         <div className="image">
@@ -23,64 +28,15 @@ class ProfileBar extends Component {
                                         </div>
                                     </div>
                                     <div className="media-content">
-                                        <h3>Jenna Davis</h3>
+                                        <h3>Furkan Cabbar</h3>
                                         <small>Main account</small>
                                     </div>
                                     <div className="media-right">
                                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-check"><polyline points="20 6 9 17 4 12" /></svg>
                                     </div>
                                 </div>
-                            </a>
-                            <hr className="account-divider" />
-                            <a href="/pages-main.html" className="account-item">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <div className="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/images/avatars/hanzo.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="media-content">
-                                        <h3>Css Ninja</h3>
-                                        <small>Company page</small>
-                                    </div>
-                                    <div className="media-right is-hidden">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-check"><polyline points="20 6 9 17 4 12" /></svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/pages-main.html" className="account-item">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <div className="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/fastpizza.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="media-content">
-                                        <h3>Fast Pizza</h3>
-                                        <small>Company page</small>
-                                    </div>
-                                    <div className="media-right is-hidden">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-check"><polyline points="20 6 9 17 4 12" /></svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="/pages-main.html" className="account-item">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <div className="image">
-                                            <img src="https://via.placeholder.com/300x300" data-demo-src="assets/images/icons/logos/slicer.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="media-content">
-                                        <h3>Slicer</h3>
-                                        <small>Company page</small>
-                                    </div>
-                                    <div className="media-right is-hidden">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-check"><polyline points="20 6 9 17 4 12" /></svg>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr className="account-divider" />
+                            </Link>
+                            <hr class="account-divider"/>
                             <a className="account-item">
                                 <div className="media">
                                     <div className="icon-wrap">

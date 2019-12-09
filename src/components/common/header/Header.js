@@ -1,7 +1,7 @@
 import React from 'react';
-import Search from './header/search/Search';
-import Notifications from './header/notifications/Notifications';
-import ProfileBar from './header/profile-bar/ProfileBar';
+import Search from './search/Search';
+import Notifications from './notifications/Notifications';
+import ProfileBar from './profile-bar/ProfileBar';
 import * as Icon from 'react-feather';
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
             <div className="container is-fluid">
                 <div className="navbar-brand">
                     <a href="/" className="navbar-item">
-                        <img src={require('../../assets/images/logo/friendkit.svg')} width={112} height={28} alt="" />
+                        <img src={require('../../../assets/images/logo/friendkit.svg')} width={112} height={28} alt="" />
                     </a>
                 </div>
                 <div className="navbar-menu">
