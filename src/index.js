@@ -25,6 +25,7 @@ import "./assets/js/explorer";
 import "./assets/js/news";
 import "./assets/js/videos";
 import "./assets/js/widgets";
+import "./assets/js/signup";
 // import './assets/js/autocompletes';
 import "./assets/js/modal-uploader";
 import "./assets/js/popovers-users";
