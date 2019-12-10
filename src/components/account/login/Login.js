@@ -1,12 +1,11 @@
 import React, { Component } from "react";
+import * as Icon from "react-feather";
 
 class Login extends Component {
   render() {
     return (
         <div>
           {/* Pageloader */}
-          <div className="pageloader" />
-          <div className="infraloader is-active" />
           <div className="login-wrapper">
             {/* Main Wrapper */}
             <div className="login-wrapper columns is-gapless">
@@ -29,7 +28,7 @@ class Login extends Component {
                   <div className="logo-wrap">
                     <div className="wrap-inner">
                       <img
-                        src="assets/images/logo/friendkit-white.svg"
+                        src={require("../../../assets/images/logo/friendkit-white.svg")}
                         alt=""
                       />
                     </div>
@@ -40,7 +39,7 @@ class Login extends Component {
                       {/*Avatar*/}
                       <div className="avatar">
                         <div className="badge">
-                          <i data-feather="check" />
+                          <Icon.Check />
                         </div>
                         <img
                           src="https://placehold.it/128x128"
@@ -58,7 +57,7 @@ class Login extends Component {
                               placeholder="jennadavis@gmail.com"
                             />
                             <div className="input-icon">
-                              <i data-feather="user" />
+                              <Icon.User />
                             </div>
                           </div>
                         </div>
@@ -70,7 +69,7 @@ class Login extends Component {
                               placeholder="●●●●●●●"
                             />
                             <div className="input-icon">
-                              <i data-feather="lock" />
+                              <Icon.Lock />
                             </div>
                           </div>
                         </div>

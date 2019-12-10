@@ -22,15 +22,11 @@ function App() {
       {/*Buraya yukardaki koşula göre header componenti geliyor veya gelmiyor*/}
       <Switch>
         <Route exact path="/" component={Timeline} />
-        <Route exact path='/account/login' component={Login}/>
-        <Route exact path='/account/register' component={Register} />
+        <Route exact path="/account/login" component={Login}/>
+        <Route exact path="/account/register" component={Register} />
         <Route exact path="/question/home" component={QuestionHome} />
         <Route exact path="/question/settings" component={QuestionSettings} />
-        <Route
-          exact
-          path="/question/categories"
-          component={QuestionCategories}
-        />
+        <Route exact path="/question/categories" component={QuestionCategories} />
         <Route exact path="/question/my-stats" component={QuestionMyStats} />
         <Route exact path="/question/my-questions" component={MyQuestions} />
         <Route exact path="/profile" component={Profile} />
