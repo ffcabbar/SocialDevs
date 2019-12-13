@@ -1,9 +1,0 @@
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\bin\Debug\netstandard2.0\SocialDevs.Business.deps.json
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\bin\Debug\netstandard2.0\SocialDevs.Business.dll
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\bin\Debug\netstandard2.0\SocialDevs.Business.pdb
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.csproj.CoreCompileInputs.cache
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.AssemblyInfoInputs.cache
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.AssemblyInfo.cs
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.dll
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.pdb
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Business\obj\Debug\netstandard2.0\SocialDevs.Business.csprojAssemblyReference.cache

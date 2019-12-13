@@ -1,9 +1,0 @@
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\bin\Debug\netstandard2.0\SocialDevs.Repository.deps.json
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\bin\Debug\netstandard2.0\SocialDevs.Repository.dll
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\bin\Debug\netstandard2.0\SocialDevs.Repository.pdb
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.csproj.CoreCompileInputs.cache
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.AssemblyInfoInputs.cache
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.AssemblyInfo.cs
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.dll
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.pdb
-C:\Projects\SocialDevs\SocialDevs\SocialDevs.Repository\obj\Debug\netstandard2.0\SocialDevs.Repository.csprojAssemblyReference.cache
