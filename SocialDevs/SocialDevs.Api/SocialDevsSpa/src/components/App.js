@@ -13,7 +13,7 @@ import ProfileFriends from "./profile/profile-friends/ProfileFriends";
 import ProfilePhotos from "./profile/profile-photos/ProfilePhotos";
 import Login from "./account/login/Login";
 import Register from "./account/register/Register";
-
+//Merhaba ben ismail
 function App() {
   return (
     <div>
