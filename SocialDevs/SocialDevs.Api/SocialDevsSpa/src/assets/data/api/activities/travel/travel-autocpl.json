@@ -1,0 +1,58 @@
+[
+    {
+        "name": "USA",
+        "pic": "assets/images/icons/flags/united-states-of-america.svg"
+    },
+    {
+        "name": "France",
+        "pic": "assets/images/icons/flags/france.svg"
+    },
+    {
+        "name": "UK",
+        "pic": "assets/images/icons/flags/united-kingdom.svg"
+    },
+    {
+        "name": "Spain",
+        "pic": "assets/images/icons/flags/spain.svg"
+    },
+    {
+        "name": "Germany",
+        "pic": "assets/images/icons/flags/germany.svg"
+    },
+    {
+        "name": "Canada",
+        "pic": "assets/images/icons/flags/canada.svg"
+    },
+    {
+        "name": "Japan",
+        "pic": "assets/images/icons/flags/japan.svg"
+    },
+    {
+        "name": "China",
+        "pic": "assets/images/icons/flags/china.svg"
+    },
+    {
+        "name": "Australia",
+        "pic": "assets/images/icons/flags/australia.svg"
+    },
+    {
+        "name": "South Africa",
+        "pic": "assets/images/icons/flags/south-africa.svg"
+    },
+    {
+        "name": "Russia",
+        "pic": "assets/images/icons/flags/russia.svg"
+    },
+    {
+        "name": "Brasil",
+        "pic": "assets/images/icons/flags/brasil.svg"
+    },
+    {
+        "name": "Mexico",
+        "pic": "assets/images/icons/flags/mexico.svg"
+    },
+    {
+        "name": "Italy",
+        "pic": "assets/images/icons/flags/italy.svg"
+    }
+]

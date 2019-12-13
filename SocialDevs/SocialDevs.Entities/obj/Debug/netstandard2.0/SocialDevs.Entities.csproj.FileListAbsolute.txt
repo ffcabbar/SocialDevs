@@ -1,0 +1,9 @@
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\bin\Debug\netstandard2.0\SocialDevs.Entities.deps.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\bin\Debug\netstandard2.0\SocialDevs.Entities.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\bin\Debug\netstandard2.0\SocialDevs.Entities.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.AssemblyInfoInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.AssemblyInfo.cs
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Entities\obj\Debug\netstandard2.0\SocialDevs.Entities.csprojAssemblyReference.cache
