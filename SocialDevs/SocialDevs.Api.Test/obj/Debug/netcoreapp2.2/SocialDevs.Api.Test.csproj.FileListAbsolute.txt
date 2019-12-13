@@ -1,0 +1,14 @@
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\SocialDevs.Api.Test.deps.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\SocialDevs.Api.Test.runtimeconfig.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\SocialDevs.Api.Test.runtimeconfig.dev.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\SocialDevs.Api.Test.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\bin\Debug\netcoreapp2.2\SocialDevs.Api.Test.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.csproj.CoreCompileInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.AssemblyInfoInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.AssemblyInfo.cs
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api.Test\obj\Debug\netcoreapp2.2\SocialDevs.Api.Test.csprojAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.deps.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.runtimeconfig.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.runtimeconfig.dev.json
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\bin\Debug\netcoreapp2.2\SocialDevs.Api.Views.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.csprojAssemblyReference.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.csproj.CoreCompileInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.RazorAssemblyInfo.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.RazorAssemblyInfo.cs
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.AssemblyInfoInputs.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.AssemblyInfo.cs
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.RazorTargetAssemblyInfo.cache
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.dll
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.pdb
+C:\Projects\SocialDevs\SocialDevs\SocialDevs.Api\obj\Debug\netcoreapp2.2\SocialDevs.Api.csproj.CopyComplete
