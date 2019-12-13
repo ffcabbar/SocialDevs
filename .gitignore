@@ -1,7 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/SocialDevs/SocialDevs.Api/SocialDevsSpa/node_modules
-/SocialDevs/.vs/SocialDevs/v15
-/SocialDevs/.vs/SocialDevs/DesignTimeBuild
