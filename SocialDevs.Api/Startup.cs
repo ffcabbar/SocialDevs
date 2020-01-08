@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SocialDevs.Api.Configuration;
+using SocialDevs.Core.Attributes;
+using SocialDevs.Core.Middleware;
 
 namespace SocialDevs.Api
 {
@@ -25,12 +27,19 @@ namespace SocialDevs.Api
 
             //DbContext
             services.AddMyDbContext(Configuration);
+            //Swagger
+            services.AddMySwagger();
+            //Services
+            services.AddMyServices();
+            //Auth
+            services.AddMyAuth(Configuration);
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "SocialDevsSpa/build";
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,9 +56,11 @@ namespace SocialDevs.Api
                 app.UseHsts();
             }
 
+            app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+            app.UseMySwagger();
 
             app.UseMvc(routes =>
             {

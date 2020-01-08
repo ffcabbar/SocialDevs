@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SocialDevs.Entities.Entities
 {
-    public class AppUserDetail
+    public class AppUserDetail : IEntity
     {
         public int Id { get; set; }
 

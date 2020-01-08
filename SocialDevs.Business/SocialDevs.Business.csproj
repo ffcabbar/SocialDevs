@@ -4,4 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SocialDevs.Domain\SocialDevs.Domain.csproj" />
+    <ProjectReference Include="..\SocialDevs.Entities\SocialDevs.Entities.csproj" />
+    <ProjectReference Include="..\SocialDevs.Repository\SocialDevs.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
