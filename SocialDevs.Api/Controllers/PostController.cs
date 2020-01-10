@@ -24,7 +24,7 @@ namespace SocialDevs.Api.Controllers
         #endregion
 
         [HttpPost("createpost")]
-        public JsonResult CreatePost([FromForm] PostCreateApi model)
+        public JsonResult CreatePost([FromBody] PostCreateApi model)
         {
             using (var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
             {
