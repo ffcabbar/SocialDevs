@@ -19,7 +19,7 @@ class FriendList extends Component {
                         </div>
                         <div className="dropdown-menu" role="menu">
                             <div className="dropdown-content">
-                                <a href="#" className="dropdown-item">
+                                <a href="/#" className="dropdown-item">
                                     <div className="media">
                                         <Icon.User/>
                                         <div className="media-content">
@@ -28,7 +28,7 @@ class FriendList extends Component {
                                         </div>
                                     </div>
                                 </a>
-                                <a className="dropdown-item">
+                                <a href="/#" className="dropdown-item">
                                     <div className="media">
                                         <Icon.MessageSquare/>
                                         <div className="media-content">

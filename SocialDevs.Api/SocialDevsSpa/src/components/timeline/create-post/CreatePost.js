@@ -103,7 +103,6 @@ class CreatePost extends Component {
                       className="textarea"
                       rows={3}
                       placeholder="Write something about you..."
-                      defaultValue={""}
                     />
                   </div>
                 </div>
@@ -628,7 +627,7 @@ class CreatePost extends Component {
                     <div className="actions">
                       <a
                         id="open-compose-search"
-                        href="javascript:void(0);"
+                        href="#!"
                         className="search-trigger"
                       >
                         <i data-feather="search" />
@@ -645,7 +644,7 @@ class CreatePost extends Component {
                         </span>
                       </div>
                       <a
-                        href="javascript:void(0);"
+                        href="#!"
                         className="is-inverted modal-trigger"
                         data-modal="create-group-modal"
                       >

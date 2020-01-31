@@ -98,7 +98,7 @@ if ($('.modal-uploader').length) {
                         };
 
                         self.emit('uploadprogress', file, file.upload.progress, file.upload.bytesSent);
-                        if (file.upload.progress == 100) {
+                        if (file.upload.progress === 100) {
                             file.status = Dropzone.SUCCESS;
                             self.emit("success", file, 'success', null);
                             self.emit("complete", file);

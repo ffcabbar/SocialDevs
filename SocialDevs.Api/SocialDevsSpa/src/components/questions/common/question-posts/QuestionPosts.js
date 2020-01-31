@@ -112,7 +112,7 @@ class QuestionPosts extends Component {
 
 
                 <div className=" load-more-wrap has-text-centered">
-                    <a href="#" className="load-more-button">
+                    <a href="/#" className="load-more-button">
                         Load More
                     </a>
                 </div>
