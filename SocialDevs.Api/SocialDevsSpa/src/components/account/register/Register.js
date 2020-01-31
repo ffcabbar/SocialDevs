@@ -3,11 +3,38 @@ import {Link} from "react-router-dom";
 import * as Icon from "react-feather";
 
 class Register extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      repassword: ""
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+  
+    this.setState({ firstName: e.target.value });
+    
+  }
+
+  handleSubmit(event) {
+    console.log(this.state);
+    //this.sendData(this.state.value);
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div>
         {/* Pageloader */}
         <div className="pageloader" />
+        <form onSubmit={this.handleSubmit}>
         <div className="infraloader is-active" />
         <div className="signup-wrapper">
           <div className="fake-nav">
@@ -100,6 +127,7 @@ class Register extends Component {
                         things.
                       </p>
                       <a
+                        href="#"
                         className="button is-fullwidth is-rounded process-button"
                         data-step="step-dot-2"
                       >
@@ -135,6 +163,8 @@ class Register extends Component {
                     <label>First Name</label>
                     <div className="control">
                       <input
+                        onChange={this.handleChange}
+                        defaultValue={this.state.firstName}
                         type="text"
                         className="input"
                         placeholder="Enter your first name"
@@ -145,6 +175,8 @@ class Register extends Component {
                     <label>Last Name</label>
                     <div className="control">
                       <input
+                        onChange={this.handleChange}
+                        defaultValue={this.state.lastName}
                         type="text"
                         className="input"
                         placeholder="Enter your last name"
@@ -155,6 +187,8 @@ class Register extends Component {
                     <label>Email</label>
                     <div className="control">
                       <input
+                        onChange={this.handleChange}
+                        defaultValue={this.state.email}
                         type="text"
                         className="input"
                         placeholder="Enter your email address"
@@ -223,6 +257,8 @@ class Register extends Component {
                     <label>Password</label>
                     <div className="control">
                       <input
+                        onChange={this.handleChange}
+                        defaultValue={this.state.password}
                         type="password"
                         className="input"
                         placeholder="Choose a password"
@@ -233,6 +269,8 @@ class Register extends Component {
                     <label>Repeat Password</label>
                     <div className="control">
                       <input
+                        onChange={this.handleChange}
+                        defaultValue={this.state.repassword}
                         type="password"
                         className="input"
                         placeholder="Repeat your password"
@@ -257,12 +295,13 @@ class Register extends Component {
                   >
                     Back
                   </a>
-                  <a
+                  <button
                     className="button is-rounded process-button is-next"
                     data-step="step-dot-5"
+                    type="submit"
                   >
                     Next
-                  </a>
+                  </button>
                 </div>
               </div>
               <div id="signup-panel-5" className="process-panel-wrap is-narrow">
@@ -313,6 +352,7 @@ class Register extends Component {
             </div>
           </div>
         </div>
+        </form>
       </div>
     );
   }

@@ -8,7 +8,7 @@ class Notifications extends Component {
             <div className="navbar-start">
                 {/* Navbar Search */}
                 <div className="navbar-item is-icon drop-trigger">
-                    <a className="icon-link is-primary is-friends" href="javascript:void(0);">
+                    <a href="/#" className="icon-link is-primary is-friends">
                         <Icon.Heart size={24} />
                         <span className="indicator" />
                     </a>
@@ -136,7 +136,7 @@ class Notifications extends Component {
                     </div>
                 </div>
                 <div className="navbar-item is-icon drop-trigger">
-                    <a className="icon-link" href="javascript:void(0);">
+                    <a className="icon-link" href="#!">
                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
                         <span className="indicator" />
                     </a>
@@ -223,7 +223,7 @@ class Notifications extends Component {
                     </div>
                 </div>
                 <div className="navbar-item is-icon drop-trigger">
-                    <a className="icon-link is-active" href="javascript:void(0);">
+                    <a className="icon-link is-active" href="#!">
                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
                         <span className="indicator" />
                     </a>
@@ -296,7 +296,7 @@ class Notifications extends Component {
                     </div>
                 </div>
                 <div className="navbar-item is-icon open-chat">
-                    <a className="icon-link is-primary" href="javascript:void(0);">
+                    <a className="icon-link is-primary" href="#!">
                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
                         <span className="indicator" />
                     </a>

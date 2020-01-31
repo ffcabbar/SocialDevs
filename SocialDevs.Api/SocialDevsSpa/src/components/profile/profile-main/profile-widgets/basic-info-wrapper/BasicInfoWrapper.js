@@ -8,35 +8,35 @@ class BasicInfoWrapper extends Component {
                     <div className="info-row">
                         <div>
                             <span>Studied at</span>
-                            <a className="is-inverted">Georgetown University</a>
+                            <a href="/#" className="is-inverted">Georgetown University</a>
                         </div>
                         <i className="mdi mdi-school" />
                     </div>
                     <div className="info-row">
                         <div>
                             <span>Married to</span>
-                            <a className="is-inverted">Dan Walker</a>
+                            <a href="/#" className="is-inverted">Dan Walker</a>
                         </div>
                         <i className="mdi mdi-heart" />
                     </div>
                     <div className="info-row">
                         <div>
                             <span>From</span>
-                            <a className="is-inverted">Melbourne, AU</a>
+                            <a href="/#" className="is-inverted">Melbourne, AU</a>
                         </div>
                         <i className="mdi mdi-earth" />
                     </div>
                     <div className="info-row">
                         <div>
                             <span>Lives in</span>
-                            <a className="is-inverted">Los Angeles, CA</a>
+                            <a href="/#" className="is-inverted">Los Angeles, CA</a>
                         </div>
                         <i className="mdi mdi-map-marker" />
                     </div>
                     <div className="info-row">
                         <div>
                             <span>Followers</span>
-                            <a className="is-muted">258 followers</a>
+                            <a href="/#" className="is-muted">258 followers</a>
                         </div>
                         <i className="mdi mdi-bell-ring" />
                     </div>

@@ -702,7 +702,7 @@ function Timeline() {
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
                         eros.</p>
                           <div className="comment-actions">
-                            <a href="javascript:void(0);" className="is-inverted">Like</a>
+                            <a href="#!" className="is-inverted">Like</a>
                             <span>3h</span>
                           </div>
                         </div>
@@ -717,7 +717,7 @@ function Timeline() {
                           <div className="username">David Kim</div>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                           <div className="comment-actions">
-                            <a href="javascript:void(0);" className="is-inverted">Like</a>
+                            <a href="#!" className="is-inverted">Like</a>
                             <span>4h</span>
                           </div>
                         </div>
@@ -733,7 +733,7 @@ function Timeline() {
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
                         eros. Consectetur adipiscing elit. Proin ornare magna eros.</p>
                           <div className="comment-actions">
-                            <a href="javascript:void(0);" className="is-inverted">Like</a>
+                            <a href="#!" className="is-inverted">Like</a>
                             <span>4h</span>
                           </div>
                         </div>
