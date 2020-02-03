@@ -19,13 +19,15 @@ module.exports = {
     overlay: true,
     historyApiFallback: true,
     disableHostCheck: true,
-    headers: { "Access-Control-Allow-Origin": "*" },
+    headers: 
+    { Accept: "application/json",
+    "Content-Type": "application/json" },
     https: false
   },
   plugins: [
-    // new webpack.DefinePlugin({
-    //   "process.env.API_URL": JSON.stringify("http://localhost:3001")
-    // }),
+    new webpack.DefinePlugin({
+      "process.env.API_URL": JSON.stringify("api/")
+    }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
       favicon: "src/favicon.ico"

@@ -3,6 +3,8 @@ import { render } from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./components/App.js";
 import * as serviceWorker from "./serviceWorker";
+import configureStore from "./redux/configureStore";
+import { Provider as ReduxProvider } from "react-redux";
 
 //CSS Files
 import "./assets/css/materialdesignicons.min.css";
@@ -35,10 +37,14 @@ import "./assets/js/lightbox";
 import "./assets/js/touch";
 import "./assets/js/tour";
 
+const store = configureStore();
+
 render(
-  <Router>
-    <App />
-  </Router>,
+  <ReduxProvider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </ReduxProvider>,
   document.getElementById("root")
 );
 

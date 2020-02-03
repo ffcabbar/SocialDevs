@@ -10,9 +10,6 @@ function Timeline() {
     <div className="view-wrapper">
       {/* Container */}
       <div id="main-feed" className="container">
-        {/* Content placeholders at page load */}
-        {/* this holds the animated content placeholders that show up before content */}
-
         {/* Feed page main wrapper */}
         <div id="activity-feed" className="view-wrap is-open">
           <div className="columns">
