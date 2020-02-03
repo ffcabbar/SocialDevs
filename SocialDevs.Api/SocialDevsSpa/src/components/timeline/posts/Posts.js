@@ -1,39 +1,23 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as postActions from "../../../redux/actions/postActions";
+import PropTypes from "prop-types";
+import { bindActionCreators } from "redux";
 
 class Posts extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      getValue: []
-    };
+  componentDidMount() {
+    const { posts, actions } = this.props;
+    actions.loadPosts().catch(error => {
+      alert("Loading posts failed" + error);
+    });
   }
-
-  componentDidMount() {    
-    fetch("api/post/getallposts",{
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    })
-    .then(result => result.json())
-    .then((data) => {
-      console.log(data.result);
-
-      let val = data.result;
-
-      this.setState({getValue: val})
-      console.log("güncel state",this.state.getValue)
-    })
-  } 
 
   render() {
     return (
       <React.Fragment>
-        {
-          this.state.getValue.map((item) => {
-             return(
-              <div key={item.id} className="card is-post">
+        {this.props.posts.map(item => {
+          return (
+            <div key={item.id} className="card is-post">
               {/* Main wrap */}
               <div className="content-wrap">
                 {/* Post header */}
@@ -100,9 +84,7 @@ class Posts extends Component {
                 <div className="card-body">
                   {/* Post body text */}
                   <div className="post-text">
-                    <p>
-                     {item.text}
-                    </p>
+                    <p>{item.text}</p>
                   </div>
                   {/* Featured image */}
                   <div className="post-image">
@@ -233,10 +215,10 @@ class Posts extends Component {
                       <a href="#">Dan Walker</a>
                       <span className="time">28 minutes ago</span>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                        do eiusmod tempo incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempo incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris consequat.
                       </p>
                       {/* Actions */}
                       <div className="controls">
@@ -269,9 +251,9 @@ class Posts extends Component {
                           <a href="#">David Kim</a>
                           <span className="time">15 minutes ago</span>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempo incididunt ut labore et dolore magna
-                            aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempo incididunt ut labore et
+                            dolore magna aliqua.
                           </p>
                           {/* Actions */}
                           <div className="controls">
@@ -374,9 +356,10 @@ class Posts extends Component {
                       <a href="#">Rolf Krupp</a>
                       <span className="time">9 hours ago</span>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                        do eiusmod tempo incididunt ut labore et dolore magna aliqua.
-                        Exercitation ullamco laboris consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempo incididunt ut labore et
+                        dolore magna aliqua. Exercitation ullamco laboris
+                        consequat.
                       </p>
                       {/* Actions */}
                       <div className="controls">
@@ -406,9 +389,9 @@ class Posts extends Component {
                           <a href="#">Elise Walker</a>
                           <span className="time">8 hours ago</span>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempo incididunt ut labore et dolore magna
-                            aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempo incididunt ut labore et
+                            dolore magna aliqua.
                           </p>
                           {/* Actions */}
                           <div className="controls">
@@ -474,9 +457,9 @@ class Posts extends Component {
                           <a href="#">Rolf Krupp</a>
                           <span className="time">7 hours ago</span>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempo incididunt ut labore et dolore magna
-                            aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempo incididunt ut labore et
+                            dolore magna aliqua.
                           </p>
                           {/* Actions */}
                           <div className="controls">
@@ -542,9 +525,9 @@ class Posts extends Component {
                           <a href="#">Elise Walker</a>
                           <span className="time">6 hours ago</span>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempo incididunt ut labore et dolore magna
-                            aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempo incididunt ut labore et
+                            dolore magna aliqua.
                           </p>
                           {/* Actions */}
                           <div className="controls">
@@ -646,8 +629,9 @@ class Posts extends Component {
                       <a href="#">Lana Henrikssen</a>
                       <span className="time">10 hours ago</span>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                        do eiusmod tempo incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempo incididunt ut labore et
+                        dolore magna aliqua.
                       </p>
                       {/* Comment actions */}
                       <div className="controls">
@@ -743,13 +727,30 @@ class Posts extends Component {
               </div>
               {/* /Post #1 Comments */}
             </div>
-             );
-          })
-        }
-      
+          );
+        })}
       </React.Fragment>
     );
   }
 }
 
-export default Posts;
+Posts.propTypes = {
+  posts: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired
+};
+
+function mapStateToProps(state) {
+  return {
+    posts: state.posts
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: {
+      loadPosts: bindActionCreators(postActions.loadPosts, dispatch)
+    }
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Posts);
