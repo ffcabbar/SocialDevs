@@ -8,7 +8,6 @@ namespace SocialDevs.Core.Security
     public interface ITokenService
     {
         TokenUserResponse GenerateToken(AppUserDto appUserDto);
-
         string GenerateAccessToken(IEnumerable<Claim> claims);
         string GenerateRefreshToken();
     }

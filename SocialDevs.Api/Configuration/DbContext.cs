@@ -10,7 +10,7 @@ namespace SocialDevs.Api.Configuration
         public static void AddMyDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             string connectionString = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("SocialDevs.Entities")));
         }
     }
 }
