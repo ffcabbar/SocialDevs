@@ -9,7 +9,7 @@ namespace SocialDevs.Entities.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<Friend> Friends { get; set; }

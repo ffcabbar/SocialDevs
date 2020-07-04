@@ -9,7 +9,7 @@ namespace SocialDevs.Core.Security.JwtSecurity
     {
         public static void ConfigureJwtAuthorization(this IServiceCollection services)
         {
-            services.AddAuthorization(auth =>
+            services.AddAuthorizationCore(auth =>
             {
                 auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
                     .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
